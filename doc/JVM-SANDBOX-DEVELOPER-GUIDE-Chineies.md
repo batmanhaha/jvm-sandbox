@@ -286,8 +286,8 @@ public class BrokenClockTinkerModule implements Module {
     ```
     ./sandbox.sh -p 64229 -l
     module-mgr          	ACTIVE  	LOADED  	0    	0    	0.0.0.1        	luanjia@taobao.com
-info                	ACTIVE  	LOADED  	0    	0    	0.0.0.1        	luanjia@taobao.com
-broken-clock-tinker 	ACTIVE  	LOADED  	0    	0    	UNKNOW_VERSION 	UNKNOW_AUTHOR
+    info                	ACTIVE  	LOADED  	0    	0    	0.0.0.1        	luanjia@taobao.com
+    broken-clock-tinker 	ACTIVE  	LOADED  	0    	0    	UNKNOW_VERSION 	UNKNOW_AUTHOR
     ```
     
     可以看到`broken-clock-tinker`模块已经正确被沙箱所加载
