@@ -283,8 +283,8 @@ public class BrokenClockTinkerModule implements Module {
     ```
     ./sandbox.sh -p 64229 -l
     module-mgr          	ACTIVE  	LOADED  	0    	0    	0.0.0.1        	luanjia@taobao.com
-info                	ACTIVE  	LOADED  	0    	0    	0.0.0.1        	luanjia@taobao.com
-broken-clock-tinker 	ACTIVE  	LOADED  	0    	0    	UNKNOW_VERSION 	UNKNOW_AUTHOR
+    info                	ACTIVE  	LOADED  	0    	0    	0.0.0.1        	luanjia@taobao.com
+    broken-clock-tinker 	ACTIVE  	LOADED  	0    	0    	UNKNOW_VERSION 	UNKNOW_AUTHOR
     ```
     
     You can see that the `broken-clock-tinker` module has been loaded correctly by the sandbox
@@ -330,7 +330,7 @@ public void repairDelay() {
 
     moduleEventWatcher.watch(
 
-            // Match to Clock$BrokenClock#checkState()
+            // Match to Clock$BrokenClock#delay()
             new NameRegexFilter("Clock\\$BrokenClock", "delay"),
 
             // Listen to the THROWS event and change the original method to throw an exception for normal return
